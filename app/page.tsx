@@ -1,18 +1,22 @@
+import Navbar from "@/components/layout/Navbar";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#050816] text-white flex items-center justify-center">
-      <div className="text-center">
-        <h2 className="text-2xl text-blue-400 mb-3">
-          Hello, I'm
-        </h2>
+    <main>
+      <Navbar />
 
-        <h1 className="text-6xl font-bold">
-          Goutam Kanakadandi
-        </h1>
+      <div className="h-screen flex items-center justify-center text-center px-6">
+        <div>
+          <p className="text-blue-400 mb-3">Hi, I'm</p>
 
-        <p className="text-gray-400 text-xl mt-5">
-          Computer Scientist • Machine Learning • Software Engineer
-        </p>
+          <h1 className="text-5xl md:text-6xl font-bold">
+            Goutam Kanakadandi
+          </h1>
+
+          <p className="text-gray-400 mt-4 text-lg">
+            Computer Science • Machine Learning • Software Engineering
+          </p>
+        </div>
       </div>
     </main>
   );
